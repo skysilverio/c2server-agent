@@ -125,3 +125,8 @@ Once the attack infrastructure is live and the agent is actively beaconing, the 
 * **Traffic Analysis:** Utilizing VPC Flow Logs and Amazon CloudWatch to visualize the encrypted "Cryptographic Sandwich" traffic. The goal is to identify network anomalies, such as the rhythmic 10-second beaconing pattern, without being able to read the encrypted payload.
 * **Detection & Remediation:** * Writing custom AWS WAF rules to drop non-JSON POST requests or block unauthorized HTTP methods.
     * Setting up EventBridge and Lambda to automatically quarantine the target EC2 instance if anomalous outbound C2 traffic is detected.
+
+---
+
+> ⚠️ **LEGAL & ETHICAL DISCLAIMER**
+> This project is a Proof-of-Concept developed strictly for educational purposes, defensive threat research, and authorized testing within isolated laboratory environments. The creator assumes no liability and is not responsible for any misuse or damage caused by this framework. **Do not deploy or utilize this software against any systems or networks for which you do not possess explicit, documented authorization.**
